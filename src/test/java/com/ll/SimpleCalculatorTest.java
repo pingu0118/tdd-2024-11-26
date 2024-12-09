@@ -13,4 +13,15 @@ public class SimpleCalculatorTest {
 
         assertEquals(3, rs);
     }
+
+
+    @Test
+    @DisplayName("2 + 10 =12")// 자연어에 가깝게 해석 가능
+    public void t2() {
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.plus(2,10);
+
+        assertEquals(12, rs);
+    }
+
 }
